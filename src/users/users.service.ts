@@ -8,8 +8,8 @@ export class UsersService {
     return 'This action adds a new user';
   }
 
-  findAll() {
-    return `This action returns all users`;
+  findAll(limit: number, offset: number) {
+    return `This action returns all users with pagination limit: ${limit}, offset: ${offset}`;
   }
 
   findOne(id: number) {
